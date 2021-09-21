@@ -20,7 +20,7 @@ async function server(mode) {
             })
         );
         app.use(cookieParser());
-        app.use(express.static(path.join(__dirname, "src", "public")));
+        app.use(express.static(path.join(__dirname,  "public")));
         app.use(databaseMiddleware);
 
         if (mode=="DEV"){
@@ -28,6 +28,7 @@ async function server(mode) {
         }
         // settings
         app.set("view engine", "ejs");
+        app.set("views", path.join(__dirname, "views"));
     } catch (error) {
         console.log(error);
         
