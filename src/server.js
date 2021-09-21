@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 1998;
 
 async function server(mode) {
     const app = express();
-    app.listen(PORT, _ => console.log("Server is ready at 1998 port"));
+    app.listen(PORT, (_) => console.log(`Server is ready at ${PORT} port`));
 
     try {
         // middlewares 
