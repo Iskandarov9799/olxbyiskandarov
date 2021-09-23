@@ -2,7 +2,7 @@
 
 <section class="my-4 py-4">
 	<div class="container">
-		<h1 class="text-center">E'lon qo'shish</h1>
+		<h1 class="text-center">Add New Advertisement</h1>
 
 		<form class="mt-4" method="POST" enctype="multipart/form-data">
 			<% if(error) {%>
@@ -12,7 +12,7 @@
 				type="text"
 				class="form-control form-control-lg"
 				name="title"
-				placeholder="Sarlavha (title)"
+				placeholder="Title (Subject)"
 				required
 			/>
 			<select
@@ -28,7 +28,7 @@
 				type="text"
 				name="price"
 				class="form-control form-control-lg mt-2"
-				placeholder="Narxi"
+				placeholder="Price"
 				required
 			/>
 
@@ -36,13 +36,14 @@
 				type="text"
 				name="phone"
 				class="form-control form-control-lg mt-2"
-				placeholder="Raqami"
+				placeholder="Phone_Number"
 				required
 			/>
 
 			<input
 				class="dropzone mt-2 w-100"
 				type="file"
+				placeholder="Images"
 				name="photos"
 				multiple
 				id="my-great-dropzone"
@@ -53,10 +54,10 @@
 				name="description"
 				id="description"
 				class="form-control form-control-lg mt-2"
-				placeholder="Ta'rif"
+				placeholder="Description"
 			></textarea>
 
-			<button class="mt-4 btn btn-primary btn-lg w-100">Qo'shish</button>
+			<button class="mt-4 btn btn-primary btn-lg w-100">Add</button>
 		</form>
 	</div>
 </section>
